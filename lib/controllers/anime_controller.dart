@@ -17,7 +17,27 @@ class AnimeController extends GetxController {
   }
 
   void getAllData() async {
-    datas = await viewModel!.getAllData("gintama");
+    datas = await viewModel!.getAllData();
+    isLoading.value = false;
+  }
+}
+
+class AnimePopularController extends GetxController {
+  var isLoading = true.obs;
+
+  AnimeModelResponse? datas;
+  AnimePopularViewModel? viewModel;
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    viewModel = Get.put(AnimePopularViewModel());
+    getAllData();
+  }
+
+  void getAllData() async {
+    datas = await viewModel!.getAllData();
     isLoading.value = false;
   }
 }
