@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:mvvm_project/controllers/anime_controller.dart';
 import 'package:mvvm_project/views/detail.dart';
@@ -82,5 +80,3 @@ class AnimePopularView extends StatelessWidget {
     );
   }
 }
-
-//child: Text(controller.datas!.results![0].title.toString())

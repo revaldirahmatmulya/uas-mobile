@@ -106,16 +106,13 @@ class Title {
   String? english;
   String? native;
   String? userPreferred;
-
   Title({this.romaji, this.english, this.native, this.userPreferred});
-
   Title.fromJson(Map<String, dynamic> json) {
     romaji = json['romaji'];
     english = json['english'];
     native = json['native'];
     userPreferred = json['userPreferred'];
   }
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['romaji'] = this.romaji;

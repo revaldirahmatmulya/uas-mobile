@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:mvvm_project/views/home.dart';
@@ -37,18 +35,5 @@ class _SplashscreenState extends State<Splashscreen> {
       color: Colors.white,
       child: Center(child: Image.asset("assets/Ani-DB.png")),
     );
-    // return GestureDetector(
-    //   child: Container(
-    //     color: Colors.white,
-    //     child: Center(
-    //       child: Image.network(
-    //           'https://www.kibrispdr.org/data/638/icon-wisata-png-10.png'),
-    //     ),
-    //   ),
-    //   onTap: () {
-    //     Navigator.push(
-    //         context, MaterialPageRoute(builder: (context) => DashboardPage()));
-    //   },
-    // );
   }
 }

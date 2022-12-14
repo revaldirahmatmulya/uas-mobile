@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:mvvm_project/controllers/anime_controller.dart';
 import 'package:mvvm_project/views/detail.dart';
 import 'package:mvvm_project/widgets/card.dart';
 import 'package:mvvm_project/widgets/custom_tile.dart';
-import 'package:get/get.dart';
 
 class AnimeViewHome extends StatelessWidget {
   var controller = Get.put(AnimeController());
@@ -83,5 +80,3 @@ class AnimeViewHome extends StatelessWidget {
     );
   }
 }
-
-//child: Text(controller.datas!.results![0].title.toString())
